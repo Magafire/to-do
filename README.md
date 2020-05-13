@@ -2,6 +2,12 @@
 Run server:
 - php bin/console server:run
 
+## Entity
+- id (int)
+- name (text)
+- done (boolean)
+- creat_at (date)
+
 ## Endpoints
 
 Add new task (POST):
@@ -33,7 +39,7 @@ http://localhost:8000/done
 ```
 
 
- Delete task (POST):
+ Delete task (DELETE):
 ```console
 Parmas required: id
 http://localhost:8000/delete
