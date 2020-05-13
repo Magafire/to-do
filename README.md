@@ -6,9 +6,7 @@ Run server:
 
 Add new task (POST):
 ```console
-Params:
--name
-Url:
+Parmas required: name
 http://localhost:8000/new
 ```
 
@@ -22,9 +20,21 @@ Show one task (GET):
 http://localhost:8000/show?id=1
 ```
 
+Edit Task (POST):
+```console
+Parmas required: id, name
+http://localhost:8000/edit
+```
 
-Show one task (POST):
+ Task done (POST):
 ```console
 Parmas required: id
 http://localhost:8000/done
+```
+
+
+ Delete task (POST):
+```console
+Parmas required: id
+http://localhost:8000/delete
 ```
